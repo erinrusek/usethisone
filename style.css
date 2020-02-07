@@ -1,0 +1,28 @@
+/*#all {
+	background-color: red;
+}*/
+
+.column {
+  float: left;
+  width: 50%;
+   background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 67%, rgba(253,187,45,1) 100%);
+color: #420000;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  float: left;
+  margin-right: 85%;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
