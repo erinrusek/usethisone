@@ -1,0 +1,92 @@
+
+
+
+.heading {
+
+	background-color: #E87537;
+	margin: 2em;
+	padding: 1em;
+	margin:left;
+	height: 10em;
+	color:white;
+	
+	display: block;
+	text-align: center;
+	font-family: 'Abril Fatface', cursive;
+	position: relative;
+	letter-spacing: 2em;
+
+
+
+
+}
+.heading1 {
+
+	background-color: #DD570F;
+	margin: 2em;
+	padding: 1em;
+	margin:right;
+	height: 30em;
+	float: left;
+	font-family: 'Cinzel', serif;
+	display: block;
+	text-align: left;
+	color: white;
+	top: 13em;
+	right:0%;
+	position: relative;
+	display: block;
+	line-height: 2em;
+	letter-spacing: 2em;
+
+
+
+
+
+
+}
+
+.heading5 {
+
+	background-color: #BF4C0F;
+	margin: 2em;
+	padding: 1em;
+	height: 100em;
+	color:white;
+	float: left;
+	font-family: 'Cinzel', serif;
+	text-align: left;
+	top: 15em;
+	right: 0%;
+	display: block;
+	position: relative;
+	line-height: 7em;
+	letter-spacing: 2em;
+
+
+
+
+}
+.body1 {
+
+	background-color: #9B3E0C;
+	margin: 2em;
+	padding: 1em;
+	height: 2em;
+	color:white;
+	font-family: 'Abril Fatface', cursive;
+	display: block;
+	text-align: center;
+	top: 60em;
+	position: relative;
+	letter-spacing: 2em;
+
+
+
+}
+
+
+#title {
+font-family: 'Abril Fatface', cursive;
+
+}

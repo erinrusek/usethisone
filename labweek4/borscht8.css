@@ -1,0 +1,145 @@
+.heading {
+
+	background-color: pink;
+	margin: 2em;
+	padding: 1em;
+	margin:left;
+	height: 10em;
+	width: 10em;
+	color:white;
+	float: left;
+	font-family: 'Josefin Sans', sans-serif;
+	display: block;
+	text-align: center;
+
+
+}
+.heading1 {
+
+	background-color: #17cfa4;
+	margin: 2em;
+	padding: 1em;
+	margin:right;
+	height: 6em;
+	width: 6em;
+	float: left;
+	font-family: 'News Cycle', sans-serif;
+	display: block;
+	position: relative;
+	text-align: center;
+	color: white;
+	top: 5em;
+
+
+
+}
+
+.heading2 {
+
+	background-color: #cccf17;
+	margin: 2em;
+	padding: 1em;
+	margin:left;
+	height: 25em;
+	width: 25em;
+	float: left;
+	font-family: 'News Cycle', sans-serif;
+	display: block;
+	text-align: left;
+	position: relative;
+	color: white;
+	top: 17em;
+
+
+
+}
+
+.heading3 {
+
+	background-color: green;
+	margin: 2em;
+	padding: 1em;
+	margin:right;
+	height: 15em;
+	width: 15em;
+	color:white;
+	float: left;
+	font-family: 'News Cycle', sans-serif;
+	display: block;
+	text-align: center;
+	position: relative;
+	top: 15em;
+
+
+
+}
+
+.heading4 {
+
+	background-color: lightblue;
+	margin: 2em;
+	padding: 1em;
+	height: 15em;
+	width: 15em;
+	float: left;
+	font-family: 'News Cycle', sans-serif;
+	display: block;
+	text-align: center;
+	position: relative;
+	color: white;
+	top: 20em;
+
+
+}
+
+.heading5 {
+
+	background-color: teal;
+	margin: 2em;
+	padding: 1em;
+	height: 6em;
+	width: 6em;
+	color:white;
+	float: left;
+	font-family: 'News Cycle', sans-serif;
+	display: block;
+	text-align: center;
+	position: relative;
+	top: 25em;
+
+
+}
+
+.body3 {
+
+	background-color: #b5480d;
+	margin: 2em;
+	padding: 1em;
+	font-family: 'News Cycle', sans-serif;
+	float: left;
+	display: block;
+	text-align: left;
+	position: relative;
+	color: white;
+	top: 30em;
+
+
+
+}
+
+.body4 {
+
+	background-color: pink;
+	margin: 2em;
+	padding: 1em;
+	font-family: 'News Cycle', sans-serif;
+	float: left;
+	display: block;
+	text-align: center;
+	position: relative;
+	color: white;
+	top: 35em;
+
+
+
+}

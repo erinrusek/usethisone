@@ -1,0 +1,14 @@
+body {
+
+	height: 100%;
+	width: 100%;
+	background: rgb(58,127,180);
+background: linear-gradient(90deg, rgba(58,127,180,0.38279061624649857) 33%, rgba(8,0,0,1) 75%);
+}
+
+.image {
+	position: fixed;
+	display: block;
+top:2%; right:2%;
+	
+}

@@ -1,0 +1,101 @@
+.heading1 {
+
+	background-color: #00ffc8;
+	height: 1em;
+	width: 10em;
+	padding: 10em;
+	float: right;
+
+}
+.heading2 {
+
+	background-color: #ff5757;
+	height: 2em;
+	width: 2em;
+	padding: 4em;
+	float: right;
+	position: relative;
+
+
+
+}
+
+.body1 {
+
+	background-color: #fff780;
+height: 2em;
+	width: 2em;
+	padding: 5em;
+	float: right;
+	position: relative;
+
+}
+
+.body2 {
+
+	background-color: #fff780;
+		height: 2em;
+	width: 2em;
+	float: left;
+	position: relative;
+		padding: 6em;
+
+}
+
+.body3 {
+
+	background-color: #ccff4d;
+		padding: 1em;
+height: 2em;
+	width: 2em;
+	float: right;
+	position: relative;
+		padding: 2em;
+}
+
+.body4 {
+
+	background-color: #59ff17;
+		padding: 3em;
+height: 2em;
+	width: 2em;
+	float: right;
+	position: relative;
+		padding: 7em;
+}
+
+.body5 {
+
+	background-color: #1cc979;
+		padding: 4em;
+height: 2em;
+	width: 2em;
+	float: left;
+	position: relative;
+		padding: 6em;
+}
+
+.body6 {
+
+	background-color: #12acff;
+		padding: 5em;
+height: 2em;
+	width: 2em;
+	float: right;
+	position: relative;
+		padding: 1em;
+}
+
+.body7 {
+
+	background-color: #9666ff;
+		padding: 6em;
+height: 2em;
+	width: 2em;
+	float: left;
+	position: relative;
+		padding: 1em;
+}
+
+
+

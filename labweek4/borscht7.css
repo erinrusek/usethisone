@@ -1,0 +1,106 @@
+.heading {
+
+	background-color: red;
+	margin: 2em;
+	padding: 1em;
+	margin:left;
+	height: 10em;
+	width: 10em;
+	color:white;
+	float: right;
+	font-family: 'Josefin Sans', sans-serif;
+
+
+}
+.heading1 {
+
+	background-color: orange;
+	margin: 2em;
+	padding: 1em;
+	margin:right;
+	height: 15em;
+	width: 15em;
+	float: left;
+	font-family: 'Josefin Sans', sans-serif;
+
+
+}
+
+.heading2 {
+
+	background-color: yellow;
+	margin: 2em;
+	padding: 1em;
+	margin:left;
+	height: 12em;
+	width: 12em;
+	float: right;
+	font-family: 'Josefin Sans', sans-serif;
+
+
+}
+
+.heading3 {
+
+	background-color: green;
+	margin: 2em;
+	padding: 1em;
+	margin:right;
+	height: 15em;
+	width: 15em;
+	color:white;
+	float: left;
+	font-family: 'Josefin Sans', sans-serif;
+
+
+
+}
+
+.heading4 {
+
+	background-color: lightblue;
+	margin: 2em;
+	padding: 1em;
+	height: 15em;
+	width: 15em;
+	float: right;
+	font-family: 'Josefin Sans', sans-serif;
+
+
+}
+
+.heading5 {
+
+	background-color: darkblue;
+	margin: 2em;
+	padding: 1em;
+	height: 6em;
+	width: 6em;
+	color:white;
+	float: right;
+	font-family: 'Josefin Sans', sans-serif;
+
+
+}
+
+.body3 {
+
+	background-color: indigo;
+	margin: 2em;
+	padding: 1em;
+	font-family: 'Josefin Sans', sans-serif;
+
+
+}
+
+.body4 {
+
+	background-color: violet;
+	margin: 2em;
+	padding: 1em;
+	font-family: 'Josefin Sans', sans-serif;
+
+
+
+
+}
