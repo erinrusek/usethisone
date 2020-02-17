@@ -1,3 +1,67 @@
+
+
+.room {
+	top: 0px;
+	
+}
+
+
 .music {
-	display: none;
+  position: relative;
+}
+
+.needlepoint {
+	position: relative;
+	top: -50em;
+	left: 40em;
+	height: 4em;
+	width: 2em;
+	opacity: 0.2;
+
+}
+
+.note {
+	position: relative;
+	top: -38em;
+	left: 18em;
+	height: 2em;
+	width: 4em;
+	opacity: 0.2;
+}
+
+.window {
+	position: relative;
+	top: -50em;
+	left: 18em;
+	height: 8em;
+	width: 8em;
+	opacity: 0.2;
+}
+
+.sibling {
+	position: relative;
+	top: -67em;
+	left: 85em;
+	height: 8em;
+	width: 8em;
+	opacity: 0.2;
+}
+
+
+.parentdoor {
+	position: relative;
+	top: -58em;
+	left: 92em;
+	height: 8em;
+	width: 8em;
+	opacity: 0.2;
+}
+
+.yourdoor {
+	position: relative;
+	top: -50em;
+	left: 51em;
+	height: 8em;
+	width: 8em;
+	opacity: 0.2;
 }
