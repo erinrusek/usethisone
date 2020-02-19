@@ -47,6 +47,20 @@
 	opacity: 0.2;
 }
 
+.radio {
+	
+    color: red;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+	top: -70em;
+	left: 30em;
+	height: 8em;
+	width: 8em;
+	opacity: 0.2;
+	z-index: 3;
+    
+}
 
 .parentdoor {
 	position: relative;

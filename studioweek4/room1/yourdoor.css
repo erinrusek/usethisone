@@ -4,20 +4,33 @@
     margin-right:auto;
 }
 
+.tvnoise{
 
+
+	position: relative;
+	top: -64.6em;
+	left: 32.8em;
+	height: 8em;
+	width: 8em;
+	opacity: 1;
+}
 
 
 
 .tv {
+	display: inline-block;
+    vertical-align: middle;
 	position: relative;
 	top: -56em;
 	left: 20em;
+	max-height: 10em;
+	max-width: 10em;
 }
 
 
 .bed {
 	position: relative;
-	top: -41em;
+	top: -37em;
 	left: 70em;
 	height: 4em;
 	width: 2em;
