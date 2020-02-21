@@ -1,0 +1,15 @@
+.when_the_div_hits {
+	font-family: 'Raleway', serif;
+	line-height: 25px;
+	background: rgb(34,193,195);
+background: linear-gradient(0deg, rgba(34,193,195,1) 45%, rgba(72,169,194,1) 94%);
+	overflow: hidden;
+}
+
+.img {
+
+	float: right;
+	position: relative;
+	top: -60vh;
+	max-width: 50%;
+}
