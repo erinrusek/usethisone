@@ -1,0 +1,26 @@
+{
+
+  "manifest_version": 2,
+  "name": "Graveyard",
+  "version": "1.0",
+
+  "description": "Where a kid could be a kid, until online retail overtook brick and mortar establishments (activate browser extension on toysrus.com).",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.toysrus.com/*"],
+      "js": ["jquery.min.js", "borderify.js"]
+    }
+  ],
+
+  "web_accessible_resources": [
+    "img/fire.gif"
+    // "img/potato2.jpg",
+    // "img/potato3.jpg"
+  ]
+
+}

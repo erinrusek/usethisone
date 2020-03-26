@@ -4,7 +4,7 @@
   "name": "this particular extension",
   "version": "1.0",
 
-  "description": "a parasite that leaves potatoes around",
+  "description": "A graveyard",
 
   // "background":
   //   {
@@ -13,9 +13,9 @@
 
   "content_scripts": [
     {
-      "matches": ["*://*.wikipedia.org/*"],
+      "matches": ["*://*.amazon.com/*"],
       "js": ["scripts/jquery.min.js", "scripts/main.js"],
-      "css" : ["styles/style.css"]
+      "css" : ["styles/styles.css"]
     }
   ],
 
