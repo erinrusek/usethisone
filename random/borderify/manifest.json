@@ -13,12 +13,13 @@
   "content_scripts": [
     {
       "matches": ["*://*.toysrus.com/*"],
-      "js": ["jquery.min.js", "borderify.js"]
+      "js": ["jquery.min.js", "borderify.js"],
+      "css" : ["styles/style.css"]
     }
   ],
 
   "web_accessible_resources": [
-    "img/fire.gif"
+    // "img/fire.gif"
     // "img/potato2.jpg",
     // "img/potato3.jpg"
   ]
