@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>fruit hunt</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="fruit.js"></script>
+
+	<style type="text/css">
+		
+		.hoverBox {
+			border: 2px dotted black;
+			border-radius: 20px;
+			position: fixed;
+			width: 100px;
+			height: 100px;
+			opacity: 0;
+			background-color: white;
+			padding: 10px;
+		}
+
+		.hoverBox .emoji {
+			font-size: 50px;
+		}
+
+	</style>
+
+</head>
+<body>
+
+</body>
+	<script type="text/javascript">
+		for(var i=0; i<fruits.length; i++){
+			var fruitDiv = $('<div/>', {
+					'class': 'hoverBox'
+				})
+				.html(
+					'<span>you found a ' + fruits[i].name + 
+					':</span> <br> <span class="emoji">'  + fruits[i].emoji +  '</span>')
+				.css({'left': Math.floor(Math.random() * 90) + "%", 'top': Math.floor(Math.random() * 90) + "%"})
+				.hover(function(){
+					$(this).css({'opacity': 100})
+				})
+
+			$('body').append(fruitDiv)
+		}
+	</script>
+</html>

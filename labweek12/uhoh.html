@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rEVOLUTIONARY?</title>
+
+	<meta charset="utf-8">
+<!-- 	<link rel="stylesheet" href="styles.css">
+ -->	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+<h1>THE PATH TOWARDS THE PRESENT "WISE BEINGS"<br><br></h1>
+
+	<p><a href="../index.html">Home</a></p>
+
+<div class="evolution"></div>
+
+</body>
+	<style type="text/css">
+
+		h1 {
+			color: white;
+		
+  		}
+
+		img {
+			display: flex;
+			flex-direction: row;
+			flex: wrap;
+			height: 19em;
+			width: 25em;
+  		}
+
+	</style>
+
+
+	<script type="text/javascript">
+
+		document.body.style.backgroundColor = "black";
+	
+		var counter = 0;
+
+		$(window).mousedown(function( event ) {
+			var wehumansDiv = $('<div/>', {
+				'class': 'mouseDownBox'
+			})
+			.html(timeline[counter%timeline.length].gif)
+			.css({'top': event.pageY-90, 'left': event.pageX-90})
+
+			counter = counter+1;
+			$('body').append(wehumansDiv)
+		});
+
+
+
+	</script>
+
+</html>
+<!-- 
+	for(var i=0; i<photos.length; i++){
+		$('.scrollBoi').append("<div class='box'>" + "<img src=" + photos[i] + ">" + "</div>")
+	} -->
+
+

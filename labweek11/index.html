@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Come Sit</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="jquery.min.js"></script>
+</head>
+
+
+
+<body>
+
+	<div class="background">
+		
+	</div>
+
+
+
+	<div class="book">
+		
+	</div>
+
+
+
+	<div class="scrollBoi">
+		
+	</div>
+
+
+	
+<!-- why is this not giving me my images??
+ -->
+</body>
+	<script type="text/javascript">
+		document.body.style.backgroundColor = "#232629";
+
+		// Here we line out the photos we'll be using in our array
+		var photos = ["1.png",
+		"2.png", "3.png", 
+		"4.png", "5.png", 
+		"6.png", "7.png", 
+		"8.png", "9.png", 
+		"10.png", "11.png", 
+		"12.png", "13.png",
+		"14.png", "15.png",
+		"16.png", "17.png",
+		"18.png", "19.jpg"]
+
+
+			for(var i=0; i<photos.length; i++){
+		$('.scrollBoi').append("<div class='box'>" + "<img src=" + photos[i] + ">" + "</div>")
+	}
+
+
+		// //In Essence: adds a div onto the page for each element in the photos array
+		// for(var i=0; i<photos.length; i++){
+		// 	// naming appendiv as a variable and creating a class inside of it called "scrollBox" 
+		// 	var appenDiv = $('<div/>', {
+		// 						id: i,
+		// 						'class': 'scrollBox'
+		// 					})
+		// 					.css({'opacity': 0})
+		// 					// creates a div in the HTML called photoarray appending the array into the div
+		// 					.html('<div class="photoarray">' + photos[i] + '</div>')
+		// 					// appends appendiv to scrollBoi
+		// 				$('.scrollBoi').append(appenDiv)
+		// 			}
+
+// need to connect scroll with image flipping
+// need to create a scroll space separate to the rest of the screen with its own scroll dimensions (on the image itself)
+
+	
+		//this function will run when the page is scrolled
+				// $(window).scroll(function() {
+				// 	var scroll = $(window).scrollTop();
+				// 	var height = $(window).height();
+
+				// 	//works out which number div we're on
+				// 	var currentDiv = Math.floor(scroll/height)
+
+				// 	if(scroll%height < height/2){
+				// 		opacity = ((scroll%height)/height)*2
+				// 	}
+
+				// 	else{
+				// 		opacity = ((height - (scroll%height))/height)*2
+				// 	}
+
+				// 	//get rid of any other traces
+				// 	$('.scrollBox').css({'opacity': 0})
+
+				// 	//set the current emoji to the correct opacity
+				// 	$('#' + currentDiv).css({'opacity': opacity})
+				// })
+
+
+
+
+// will help with css :https://www.w3schools.com/howto/howto_css_bg_change_scroll.asp
+
+// scrolling turtorial: https://www.youtube.com/watch?v=mSiJSEH1Ry0 
+
+
+
+
+	</script>
+</html>
