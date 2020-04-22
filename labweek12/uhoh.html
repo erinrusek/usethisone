@@ -36,7 +36,7 @@
 
 	<script type="text/javascript">
 
-		document.body.style.backgroundColor = "black";
+		// document.body.style.backgroundColor = "black";
 	
 		var counter = 0;
 
@@ -45,6 +45,7 @@
 				'class': 'mouseDownBox'
 			})
 			.html(timeline[counter%timeline.length].gif)
+			.append(timeline[counter%timeline.length].name)
 			.css({'top': event.pageY-90, 'left': event.pageX-90})
 
 			counter = counter+1;

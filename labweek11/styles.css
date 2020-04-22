@@ -1,9 +1,21 @@
 .book {
-	height: 50vh;
-	width: 100vh;
+	height: 30vh;
+	width: 60vh;
 	background-color: #852e05;
 	display: flex;	
 	align-items: center;
 	justify-content: center;
 	margin: 100px;
+	min-height: 40vh;
+	max-height: 40vh;
+	min-width: 20vh;
+	max-width: 60vh;
 }
+
+/*.mouseDownBox {
+	height: 10px;
+	width: 20px;
+	background-color: #852e05;
+	display: flex;	
+	align-items: center;
+}*/
