@@ -115,4 +115,9 @@ var photos = [
 		"name": "Quarantine Day: 19",
 		
 	}
+	{
+		"pic": "<img src='20.png'>",
+		"name": "Quarantine Day: 20",
+		
+	}
 ]
