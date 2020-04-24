@@ -1,9 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Wekk 13 Homework</title>
+	<title>Week 13 Homework: Filtering</title>
+	<meta charset="utf-8">
+<!-- 	<link rel="stylesheet" href="styles.css">
+ -->	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="biomes.js"></script>
+	 <link rel="stylesheet" href="styles.css">
+	 <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+
+
+
 </head>
 <body>
+	<h1>Arrays, For Loops and Filters</h1>
+	<p><a href="../index.html">Home</a></p>
 
 </body>
+	<script type="text/javascript">
+
+	document.body.style.backgroundColor = "#004a25";
+
+
+	var counter = 0;
+
+		$(window).mousedown(function( event ) {
+			var biomeMe = $('<div/>', {
+				'class': 'mouseDownBox'
+			})
+			.html(biomes[counter%biomes.length].name)
+			.append(biomes[counter%biomes.length].climate)
+			.append(biomes[counter%biomes.length].plants)
+
+			.css({'top': event.pageY-90, 'left': event.pageX-90})
+
+			counter = counter+1;
+			$('body').append(biomeMe)
+		});
+
+// accessing countries??
+for(var i=0; i<biomes.length; i++){
+	for (var key in biomes[i].countries) {
+	    console.log(key + ": " + biomes[i].countries[key]);
+	}
+}
+
+	</script>
 </html>

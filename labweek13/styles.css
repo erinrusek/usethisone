@@ -1,0 +1,14 @@
+.mouseDownBox {
+	font-family: 'Goudy Bookletter 1911', serif;
+	color: white;
+	letter-spacing: 1px;
+	display: flex;
+	flex: wrap;
+	left: 50%;
+
+}
+
+h1 {
+	font-family: 'Manrope', sans-serif;
+	color: white;
+}
