@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Come Sit</title>
+	<title>Scrap Book</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="styles.css">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 	<script type="text/javascript" src="jquery.min.js"></script>
+	<!-- CSS for background image -->
+	  <style>
+	  	body {
+		    opacity: 1;
+		    transition: 1s opacity;
+		}
+		body.fade-out {
+		    opacity: 0;
+		    transition: none;
+		}
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+            z-index: -5;
+        }
+        .backpic {
+        	position: relative;
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+            z-index: -5;
+             filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+        }
+    </style>
 </head>
 
 
@@ -21,6 +51,11 @@
 		</script>
 	</div>
 
+
+	<div class="imgbox">
+		<img class="backpic" src="fireplace.gif" alt="A hecking cozy living room with a fireplace and books and a couch, and, books you can pull out?">
+
+	</div>
 	<!-- <div class="audio">
 		<audio controls="autoplay">
 			<source src="audio.mp3" type="audio/mpeg">
@@ -34,7 +69,6 @@
 
 	</div>
 
-
 	<div class="book">
 		<!-- designates the book cover -->
 	</div>
@@ -43,15 +77,20 @@
 		<!-- designates the pages on top of the cover -->
 	</div>
 
+	<div class="pages2">
+		<!-- designates the pages behind the first page -->
+	</div>
+
 	<div class="back">
 	
 	<p><a href="../index.html">Back to Virtual Reality</a></p></div>
 <!-- why is this not re-sizing my images??
  -->
 </body>
+
 	<script type="text/javascript">
 
-		document.body.style.backgroundColor = "#232629";
+		document.body.style.backgroundColor = "black";
 
 		var counter = 0;
 // gives us the mousedown function + creates a class in HTML called mouseDownBox + a variable called photoclick
@@ -61,16 +100,21 @@
 			})
 // chooses .pic from the array to add the event listener to
 			.html(photos[counter%photos.length].pic)
-			.css({'top': event.pageY-90, 'left': event.pageX-90, 'height':0,})
+			// .css({'top': event.pageY-90, 'left': event.pageX-90, 'height':0,})
 			// $("body").css({"width": "10px", "height": "10px"});
 
 // appends the variable to the HTML
 			counter = counter+1;
 			$('body').append(photoclick)
 		});
-
-
-		$(".photoclick").css({"background-color": "yellow", "height": "20px", "width": "20px",});
-
 	</script>
+
+	<!-- fadeeeeeee outtttttt againnnnnnnnnn -->
+	<script>
+		document.body.className += ' fade-out';
+		$(function() {
+	    $('body').removeClass('fade-out');
+	});
+	</script>
+
 </html>
