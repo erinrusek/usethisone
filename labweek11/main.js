@@ -5,7 +5,7 @@ var photos = [
 		"pic": "<img src='1.png'>",
 		"name": "Quarantine Day: 1",
 		"desc": "Our first online class in Intro to Deign studies recitation using the director of the communication design department teaching his class in cyberspace as a background",
-		"size": "",
+		"news": "January 30th, 2020: 'W.H.O. Declares Global Emergency as Wuhan Coronavirus Spreads'",
 		
 	},
 
@@ -13,6 +13,7 @@ var photos = [
 		"pic": "<img src='2.png'>",
 		"name": "Quarantine Day: 2",
 		"desc": "Teacher pops into our breakout room to make sure we're working, and finds this meta behavior instead",
+		"news": "February 1st, 2020 (ℍ𝕒𝕡𝕡𝕪 𝔹𝕚𝕣𝕥𝕙𝕕𝕒𝕪): Coronavirus Updates: U.S. Bars Foreigners Who Visited China; Markets Sink",
 
 		
 	},
@@ -148,5 +149,30 @@ var photos = [
 		"pic": "<img src='20.png'>",
 		"name": "Quarantine Day: 20",
 		
+	},
+
+	{
+		"pic": "<img src='21.png'>",
+		"name": "Quarantine Day: 21",
+		"desc": "No comment",
+
+		
+	},
+
+	{
+		"pic": "<img src='22.png'>",
+		"name": "Quarantine Day: 22",
+		"desc": "No comment",
+
+		
+	},
+
+	{
+		"pic": "<img src='23.png'>",
+		"name": "Quarantine Day: 23",
+		"desc": "Ted Nelson is STILL ALIVE according to Wikipedia",
+
+		
 	}
+
 ]

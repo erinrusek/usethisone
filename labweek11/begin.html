@@ -4,8 +4,8 @@
 	<title>Come Sit</title>
 	<meta charset="utf-8">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-	<!-- <script type="text/javascript" src="main.js"></script>
-	<script type="text/javascript" src="jquery.min.js"></script> -->
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="jquery.min.js"></script>
 
 	<!-- audio -->
 	<script type="text/javascript">
@@ -28,6 +28,20 @@
             max-height: 100vh;
             margin: auto;
         }
+        #text {
+			color: red;
+			font-size: 40px;
+			text-align: center;
+			font-weight: 700;
+			z-index: 10;
+			top: 10%;
+		}
+		.hoverBox {
+			border: 2px dotted white;
+			border-radius: 20px;
+			position: fixed;
+			z-index: 10;
+		}
     </style>
 </head>
 <body>
@@ -48,7 +62,7 @@
 
 <!-- Begin book click links -->
 <div class="click-book">
-		<p><a href="index.html" target="_blank" style="
+		<p><a href="index.html" style="
 			width: 10px; 
 		    border-left: 4em solid transparent; 
 		    border-top: 12px solid #b5b8bd;
@@ -62,24 +76,43 @@
 		    max-width: 10px;
 		    "><!-- TEMPORARY LINK 1 -->
 		</a></p>
-		<p><a href="book2.html" target="_blank">TEMPORARY LINK 2</a></p>
-		<p><a href="book3.html" target="_blank">TEMPORARY LINK 3</a></p>s
+		<!-- <p><a href="book2.html" target="_blank">TEMPORARY LINK 2</a></p>
+		<p><a href="book3.html" target="_blank">TEMPORARY LINK 3</a></p> -->
 
 </div>
-<!-- use target="_blank" once you have clickable objects -->
-<!-- thats a fire beech -->
-
 
 <div class="home">
 	<p><a href="../index.html">Back to Virtual Reality</a></p></div>
 </div>
 
-<!-- Audio -->
+<!-- Audio  WhIcH dOeSn'T fUcKiNg WoRk-->
 <div class="sound">
 	<a href="#" onmousedown="sound.play ()
-		    ">on</a>
+		    ">on</a> 
+		    <!-- flash along with "on" something scary? Some words? -->
 </div>
 
+<!-- news bookshelf reveals news articles about the virus on hover -->
+<div id="text">
+	
+</div>
+
+	<script type="text/javascript">
+	
+		// keyboard typing script!!!!!!!!!!
+			var	i=0,text;
+			text = "I want one of my objects length to fit here"
+
+			function typing() {
+				if(i<text.length){
+					document.getElementById("text").innerHTML += text.charAt(i);
+					i++;
+					setTimeout(typing,50);
+				}
+			}
+			typing();
+
+	</script>
 
 </body>
 	<script type="text/javascript">
@@ -89,9 +122,26 @@
 	<!-- console guidance -->
 	<script type="text/javascript">
 
-		console.log('A book on the coffee table, a red book, and one by the daffodils');
-		console.log('for a more immersive experience, click "on"');
+		console.log('HINT: A book on the coffee table, a red book, and one by the daffodils');
+		console.log('HINT: for a more immersive experience, click "on"');
 
 		
+	</script>
+	<!-- news hover timeline  -->
+	<script type="text/javascript">
+		for(var i=0; i<photos.length; i++){
+			var hovernews = $('<div/>', {
+					'class': 'hoverBox'
+				})
+				.html(photos[i].news)
+				.css({'left': Math.floor(Math.random() * 90) + "%", 'top': Math.floor(Math.random() * 90) + "%"})
+				.hover(function(hovernews){
+					$(this).css({'opacity': 100})
+					$( this ).fadeOut( 100 );
+  					$( this ).fadeIn( 500 );
+				});
+
+			$('body').append(hovernews)
+		}
 	</script>
 </html>
