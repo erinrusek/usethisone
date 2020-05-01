@@ -42,24 +42,108 @@
 }
 
 .mouseDownBox {
+	font-family: 'Gochi Hand', cursive;
 	position: absolute;
 	height: 35px;
 	width: 35px;
 	z-index: 4;
 	top: 7em;
 	left: 7em;
+	line-height: 13px;
+	padding-left: 10px;
+	padding-top: 1px;
+	color: #403a2b;
+	background-color: #f5eedc;
 }
 
 .mouseDownBox > img {
-	height: 35vh;
-	width: 55vh;
+	height: 30vh;
+	width: 45vh;
+	left: 30px
 }
 
-#news {
-	color: red;
-	font-size: 40px;
-	text-align: center;
-	font-weight: 700;
-	z-index: 10;
-	top: 10%;
+.mouseDownBox > text {
+	height: 35vh;
+	width: 55vh;
+	color: yellow;
+}
+body {
+	opacity: 1;
+	transition: 1s opacity;
+}
+
+body.fade-out {
+	opacity: 0;
+	transition: none;
+}
+
+* {
+   	margin: 0;
+    padding: 0;
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+    z-index: -5;
+}
+
+.backpic {
+    position: relative;
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+    z-index: -5;
+    filter: blur(8px);
+  	-webkit-filter: blur(8px);
+}
+/*index.html hover slide function: Contextualizing pictures*/
+/*.hoverdesc {
+			font-family: 'Slabo 27px', serif;
+			border-radius: 20px;
+			position: fixed;
+			z-index: 10;
+			opacity: 0;
+			color: white;
+			height: 20px;
+			width: 5em;
+			font-size: 25px;
+			line-height: 25px;
+
+}*/
+#text {
+			color: red;
+			font-size: 40px;
+			text-align: center;
+			font-weight: 700;
+			z-index: 10;
+			top: 10%;
+}
+
+.hoverArea {
+			position: relative;
+			color: white;
+			font-size: 20px;
+			text-align: center;
+			font-weight: 700;
+			z-index: 10;
+			top: 100%;
+			background-color: #b2bfd4;
+			height: 10em;
+    		box-shadow: 0 0 20px 20px #b2bfd4;
+   			transition: all 1s ease;
+			-webkit-transition: all 1s ease;
+			width: 60vh;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			opacity: 0;
+			left: 20%;
+}
+
+.hoverArea > img {
+			height: 30vh;
+			width: 60vh;
+			left: 30px
+			opacity: .5;
 }

@@ -6,6 +6,7 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 	<script type="text/javascript" src="jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
 
 	<!-- audio -->
 	<script type="text/javascript">
@@ -37,18 +38,29 @@
 			top: 10%;
 		}
 		.hoverBox {
-			border: 2px dotted white;
+			font-family: 'Slabo 27px', serif;
 			border-radius: 20px;
 			position: fixed;
 			z-index: 10;
+			opacity: 0;
+			color: white;
+			height: 20px;
+			width: 5em;
+			font-size: 25px;
+			line-height: 25px;
+
 		}
     </style>
 </head>
 <body>
-<!-- help -->
+<!-- help alert: Triggered only once-->
 	<div class="welcome">
 		<script type="text/javascript">
-
+				// var alerted = localStorage.getItem('alerted') || '';
+    // 			if (alerted != 'yes') {
+    // 			alert("𝕀𝕗 𝕪𝕠𝕦 𝕟𝕖𝕖𝕕 𝕙𝕖𝕝𝕡, 𝕗𝕖𝕖𝕝 𝕗𝕣𝕖𝕖 𝕥𝕠 𝕧𝕚𝕤𝕚𝕥 𝕔𝕠𝕟𝕤𝕠𝕝𝕖");
+    //  			localStorage.setItem('alerted','yes');
+    // 		}
 			setTimeout(function(){ alert("𝕀𝕗 𝕪𝕠𝕦 𝕟𝕖𝕖𝕕 𝕙𝕖𝕝𝕡, 𝕗𝕖𝕖𝕝 𝕗𝕣𝕖𝕖 𝕥𝕠 𝕧𝕚𝕤𝕚𝕥 𝕔𝕠𝕟𝕤𝕠𝕝𝕖"); }, 1000);
 
 		</script>
@@ -96,24 +108,6 @@
 <div id="text">
 	
 </div>
-
-	<script type="text/javascript">
-	
-		// keyboard typing script!!!!!!!!!!
-			var	i=0,text;
-			text = "I want one of my objects length to fit here"
-
-			function typing() {
-				if(i<text.length){
-					document.getElementById("text").innerHTML += text.charAt(i);
-					i++;
-					setTimeout(typing,50);
-				}
-			}
-			typing();
-
-	</script>
-
 </body>
 	<script type="text/javascript">
 		document.body.style.backgroundColor = "black";
@@ -122,11 +116,30 @@
 	<!-- console guidance -->
 	<script type="text/javascript">
 
-		console.log('HINT: A book on the coffee table, a red book, and one by the daffodils');
+		console.log("HINT: There's an interesting book on the coffee table");
 		console.log('HINT: for a more immersive experience, click "on"');
 
 		
 	</script>
+
+
+	<script type="text/javascript">
+			// keyboard typing script!!!!!!!!!!
+
+				function typing(text) {
+					// var	i=0;
+					console.log(text)
+
+				// for(var i=0; i<text.length; i++){
+					if(text.length){
+						document.getElementById("text").innerHTML += text.charAt(0);
+						// i++;
+						setTimeout(typing,50, text.slice(1));
+					}
+				}
+	</script>
+
+
 	<!-- news hover timeline  -->
 	<script type="text/javascript">
 		for(var i=0; i<photos.length; i++){
@@ -134,14 +147,24 @@
 					'class': 'hoverBox'
 				})
 				.html(photos[i].news)
+			// .css({'top': event.pageY-90, 'left': event.pageX-90})
+			// counter = counter+1;
 				.css({'left': Math.floor(Math.random() * 90) + "%", 'top': Math.floor(Math.random() * 90) + "%"})
-				.hover(function(hovernews){
+				.hover(function(){
+					typing($(this).html())
 					$(this).css({'opacity': 100})
-					$( this ).fadeOut( 100 );
-  					$( this ).fadeIn( 500 );
+					// $( this ).fadeOut( 100 );
+  			// 		$( this ).fadeIn( 500 );
 				});
 
 			$('body').append(hovernews)
 		}
+	</script>
+<!-- fade in -->
+	<script>
+		document.body.className += ' fade-out';
+		$(function() {
+	    $('body').removeClass('fade-out');
+	});
 	</script>
 </html>
