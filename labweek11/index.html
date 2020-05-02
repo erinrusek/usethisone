@@ -8,6 +8,7 @@
 	<script type="text/javascript" src="main.js"></script>
 	<script type="text/javascript" src="jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Jost:ital@1&display=swap" rel="stylesheet">
 </head>
 
 
@@ -16,25 +17,16 @@
 	<!-- Alert only once -->
 	<div class="welcome">
 		<script type="text/javascript">
-			// var alerted = localStorage.getItem('alerted') || '';
-   //  			if (alerted != 'yes') {
-   //   			alert("ℂ𝕝𝕚𝕔𝕜 𝕠𝕟 𝕥𝕙𝕖 𝕓𝕠𝕠𝕜 𝕥𝕠 ℝ𝕖𝕝𝕒𝕩 𝕒𝕟𝕕 ℝ𝕖𝕞𝕚𝕟𝕚𝕤𝕔𝕖");
-   //  	 		localStorage.setItem('alerted','yes');
-   // 			 }
 			setTimeout(function(){ alert("ℂ𝕝𝕚𝕔𝕜 𝕠𝕟 𝕥𝕙𝕖 𝕓𝕠𝕠𝕜 𝕥𝕠 ℝ𝕖𝕝𝕒𝕩 𝕒𝕟𝕕 ℝ𝕖𝕞𝕚𝕟𝕚𝕤𝕔𝕖"); }, 1000);
 		</script>
 	</div>
 
 	<div class="imgbox">
-		<a href="begin.html" style=".grab {cursor: -webkit-grab; cursor: grab;}">
+		<a href="whatchaosimaginary.html" style=".grab {cursor: -webkit-grab; cursor: grab;}">
 			<img class="backpic" src="fireplace.gif" alt="A hecking cozy living room with a fireplace and books and a couch, and, books you can pull out?">
 		</a>	
 	</div>
-	<!-- <div class="audio">
-		<audio controls="autoplay">
-			<source src="audio.mp3" type="audio/mpeg">
-		</audio>
-	</div> -->
+
 	<div class="background">
 <!-- if then statement using css saturate property to de-saturate -->
 	</div>
@@ -58,7 +50,49 @@
 	<div id="texty">
 	<!-- id for mouse typing -->
 	</div>
+
+	<audio 
+		src="audio/crash.mp3" id="crashboi">
+	</audio>
+
+	<div id="helptxt">
+		<!-- typing text -->
+	</div>
+
+	<script type="text/javascript">
+		var i=0,text;
+		text= " nwdisfugesuidfiusbiuegf 'ℂ𝕝𝕚𝕔𝕜𝕚𝕟𝕘 through this scrapbook, I can remember these quarantine memories with  much solace, but I can't seem to place them. Perhaps if I 𝕙𝕠𝕧𝕖𝕣 around...'"
+
+		function typing(){
+			if(i<text.length){
+				document.getElementById("helptxt").innerHTML += text.charAt(i);
+				i++;
+				setTimeout(typing,70);
+			}
+		}
+		typing();
+
+	</script>
+
 </body>
+
+<!-- audio plays when scroll bottom -->
+	<script type="text/javascript">
+		var playing = false;
+		var audioElm = $('#crashboi').get(0);
+		$(window).scroll(function() {
+		  var pageScroll = $(window).scrollTop();
+		  if(!playing && pageScroll > 3000 && pageScroll < 6000){
+		    audioElm.play();
+		    playing = true;
+		  }else if(pageScroll > 6000 || pageScroll < 3000){
+		    audioElm.pause();
+		    playing = false;
+		  }
+		});
+	</script>
+
+
 
 	<script type="text/javascript">
 
@@ -78,35 +112,14 @@
 					$("desc").css({'opacity': 100})
 					// $( this ).fadeOut( 100 );
   			// 		$( this ).fadeIn( 500 );
-				})
+				});
 			// appends the variable to the HTML
 			counter = counter+1;
 			$('body').append(photoclick)
 			});
-
-			// .css({'top': event.pageY-90, 'left': event.pageX-90, 'height':0,})
-			// $("body").css({"width": "10px", "height": "10px"});
-
-
 	</script>
 
-	<!-- <script type="text/javascript">
-		// keyboard typing script!!!!!!!!!!
-
-			function typing(text) {
-				// var	i=0;
-				console.log(text)
-
-			// for(var i=0; i<text.length; i++){
-				if(text.length){
-					document.getElementById("texty").innerHTML += text.charAt(0);
-					// i++;
-					setTimeout(typing,50, text.slice(1));
-				}
-			}
-	</script> -->
-
-	<!-- blue memories fading in-->
+	<!--  memories fading in-->
 	<script type="text/javascript">
 		for(var i=0; i<photos.length; i++){
 			var hoverdesc = $('<div/>', {
@@ -120,7 +133,7 @@
   			// 		$( this ).fadeIn( 500 );
 				});
 			$('body').append(hoverdesc)
-		}
+		};
 	</script>
 
 	<!-- fadeeeeeee outtttttt againnnnnnnnnn -->

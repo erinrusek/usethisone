@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pay attention</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<!-- CSS for background image -->
+	  <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .backpic {
+        	position: relative;
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+        #text {
+			color: red;
+			font-size: 40px;
+			text-align: center;
+			font-weight: 700;
+			z-index: 10;
+			top: 10%;
+		}
+		.hoverBox {
+			font-family: 'Slabo 27px', serif;
+			border-radius: 20px;
+			position: fixed;
+			z-index: 10;
+			opacity: 0;
+			color: white;
+			height: 20px;
+			width: 5em;
+			font-size: 25px;
+			line-height: 25px;
+
+		}
+    </style>
+<!-- Background image -->
+<div class="imgbox">
+	<img class="backpic" src="fireplace.gif" alt="What's this???">
+
+</div>
+
+</body>
+<script type="text/javascript">
+		document.body.style.backgroundColor = "black";
+	</script>
+</html>

@@ -127,23 +127,36 @@ body.fade-out {
 			text-align: center;
 			font-weight: 700;
 			z-index: 10;
-			top: 100%;
-			background-color: #b2bfd4;
+			top: -10%;
+			background-color: #2A2B2B;
 			height: 10em;
-    		box-shadow: 0 0 20px 20px #b2bfd4;
+    		box-shadow: 0 0 20px 20px #2A2B2B;
    			transition: all 1s ease;
 			-webkit-transition: all 1s ease;
 			width: 60vh;
 			display: flex;
 			flex-direction: row;
-			justify-content: space-around;
+			justify-content: space-between;
 			opacity: 0;
 			left: 20%;
 }
 
 .hoverArea > img {
 			height: 30vh;
-			width: 60vh;
+			width: 40vh;
 			left: 30px
 			opacity: .5;
+}
+
+#helptxt {
+			font-family: 'Jost', sans-serif;
+			color: #1da8a1;
+			position: absolute;
+			font-size: 30px;
+			top: 5%;
+			height: 20em;
+			width: 30px;
+			padding-right: 5em;
+			left: 70%;
+			z-index: 20;
 }
