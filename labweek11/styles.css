@@ -112,6 +112,7 @@ body.fade-out {
 
 }*/
 #text {
+			font-family: 'Teko', sans-serif;
 			color: red;
 			font-size: 40px;
 			text-align: center;
@@ -160,3 +161,5 @@ body.fade-out {
 			left: 70%;
 			z-index: 20;
 }
+
+

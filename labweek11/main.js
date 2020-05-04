@@ -80,7 +80,7 @@ var photos = [
 		"pic": "<img src='10.png'>",
 		"name": "Quarantine Day: 122",
 		"desc": "Cursed image radiating more meta energy (mirror images on the 2nd and last participant screens)",
-		"news": "March 16th, 2020: Europeans Erect Borders Against Virus, but the Enemy Is Already Within: In societies where life plays out in public, where friends are greeted with kisses on the cheeks, there is fear and fragmentation.",
+		"news": "March 16th, 2020: Europeans Erect Borders Against Virus, but the Enemy Is Already Within: ",
 
 	},
 
@@ -175,7 +175,7 @@ var photos = [
 		"pic": "<img src='21.png'>",
 		"name": "Quarantine Day: 21202378401463745913y4?",
 		"desc": "GOD I NEED A HAIRCUT",
-		"news": "April 21st, 2020: ‘I Don’t Think the New York That We Left Will Be Back for Some Years’",
+		"news": "April 21st, 2020: ‘I Don’t Think the New York That We Left Will Be Back for Some Years’ ARE YOU PAYING ATTENTION",
 
 		
 	},
@@ -198,10 +198,18 @@ var photos = [
 		
 	},
 	{
+		"pic": "<img src='25.png'>",
+		"name": "Quarantine Day: PAY ATTENTIONPAY ATTENTIONPAY ATTENTIONPAY ATTENTIONPAY ATTENTIONPAY ATTENTIONPAY ATTENTIONPAY ATTENTIONPAY ATTENTIONPAY ATTENTIONPAY ATTENTIONPAY ATTENTIONPAY ATTENTIONPAY ATTENTIONPAY ATTENTION PAY ATTENTIONPAY ATTENTION PAY ATTENTION PAY ATTENTION PAY ATTENTION PAY ATTENTION PAY ATTENTION",
+		"desc": "Jeffree Star knows more than he's telling...",
+		"news": "April 5th, 2020: ARE YOU PAYING ATTENTION",
+
+		
+	},
+	{
 		"pic": "<img src='24.png'>",
 		"name": "Quarantine Day: HELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELPHELP",
 		"desc": "What is that noise? I need to snap out of it and check back to the living room",
-		"news": "",
+		"news": "ARE YOU PAYING ATTENTION",
 	},
 
 ]

@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Pay attention</title>
+	<title>Can't Escape</title>
 	<meta charset="utf-8">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 	<script type="text/javascript" src="jquery.min.js"></script>
-	<link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-
 <!-- CSS for background image -->
 	  <style>
-        * {
+        body {
             margin: 0;
             padding: 0;
         }
-        .imgbox {
+        /*.imgbox {
             display: grid;
             height: 100%;
-        }
-        .backpic {
+        }*/
+        /*.backpic {
         	position: relative;
             max-width: 100%;
             max-height: 100vh;
             margin: auto;
-        }
-        #text {
+        }*/
+		.hoverBox {
+			font-family: 'Teko', sans-serif;
+			border-radius: 0px;
+			position: fixed;
+			z-index: 10;
+			opacity: 0;
+			color: white;
+			height: 10em;
+			width: 5em;
+			font-size: 25px;
+			line-height: 25px;
+			background: rgb(7,33,33);
+			background: linear-gradient(0deg, rgba(7,33,33,1) 42%, rgba(193,17,17,1) 77%);
+		}
+		#text {
+			font-family: 'Teko', sans-serif;
 			color: red;
 			font-size: 40px;
 			text-align: center;
@@ -35,28 +48,141 @@
 			z-index: 10;
 			top: 10%;
 		}
-		.hoverBox {
-			font-family: 'Slabo 27px', serif;
-			border-radius: 20px;
-			position: fixed;
+		section:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			mix-blend-mode: hard-light;
+			background: url(fireplace.gif);
 			z-index: 10;
-			opacity: 0;
-			color: white;
-			height: 20px;
-			width: 5em;
-			font-size: 25px;
-			line-height: 25px;
+		}
+		section:hover:before {
+			animation: animate .2s linear infinite;
+		}
+		@keyframes animate {
+			0% {
+				background-position: 0 0;
+			}
+			10% {
+				background-position: 5px 0;
+			}
+			20% {
+				background-position: -5px 0;
+			}
+			30% {
+				background-position: 15px 0;
+			}
+			40% {
+				background-position: -5px 0;
+			}
+			50% {
+				background-position: -25px 0;
+			}
+			60% {
+				background-position: -50px 0;
+			}
+			70% {
+				background-position: 0 -20px;
+			}
+			80% {
+				background-position: -60px -20px;
+			}
+			81% {
+				background-position: 0 0;
+			}
+			100% {
+				background-position: 0 0;
+			}
+		}
+		body {
+		  animation: blinker 10s linear infinite;
+		}
 
+		@keyframes blinker {
+		  50% {
+		    opacity: 0;
+		  }
 		}
     </style>
-<!-- Background image -->
-<div class="imgbox">
-	<img class="backpic" src="fireplace.gif" alt="What's this???">
 
+<!-- Background image -->
+<section>
+	
+</section>
+
+<div class="blink">
+	
 </div>
 
+<div id="text">
+	<!-- div for typey text -->
+</div>
+
+
+
 </body>
+
+
 <script type="text/javascript">
-		document.body.style.backgroundColor = "black";
+		document.body.style.backgroundImage = "url('666.gif')";
+	</script>
+
+<script type="text/javascript">
+			// keyboard typing script!!!!!!!!!!
+
+				function typing(text) {
+					// var	i=0;
+					console.log(text)
+
+				// for(var i=0; i<text.length; i++){
+					if(text.length){
+						document.getElementById("text").innerHTML += text.charAt(0);
+						// i++;
+						setTimeout(typing,50, text.slice(1));
+					}
+				}
+	</script>
+
+
+	<!-- news hover timeline  -->
+	<script type="text/javascript">
+		for(var i=0; i<photos.length; i++){
+			var hovernews = $('<div/>', {
+					'class': 'hoverBox'
+				})
+				.html(photos[i].news)
+			// .css({'top': event.pageY-90, 'left': event.pageX-90})
+			// counter = counter+1;
+				.css({'left': Math.floor(Math.random() * 90) + "%", 'top': Math.floor(Math.random() * 90) + "%"})
+				.hover(function(){
+					typing($(this).html())
+					$(this).css({'opacity': 100})
+					// $( this ).fadeOut( 100 );
+  			// 		$( this ).fadeIn( 500 );
+				});
+
+			$('body').append(hovernews)
+		}
+	</script>
+
+	<!-- autoscroll beach -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+     	$('body,html').animate({scrollTop: 156}, 800); 
+		});
+	</script>
+	<script type="text/javascript">
+			console.log('Click the scrapbook to take your mind off of things.');
+	</script>
+
+	<!-- fade in -->
+	<script>
+		document.body.className += ' fade-out';
+		$(function() {
+	    $('body').removeClass('fade-out');
+	});
 	</script>
 </html>

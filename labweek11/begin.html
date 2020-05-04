@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Come Sit</title>
+	<title>Safe Space</title>
 	<meta charset="utf-8">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="main.js"></script>
@@ -9,10 +9,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap" rel="stylesheet">
 
 	<!-- audio -->
-	<script type="text/javascript">
+<!-- 	<script type="text/javascript">
 		var sound = new Audio ();
 		sound.src = "rain.mp3";
-	</script>
+	</script> -->
 	<!-- CSS for background image -->
 	  <style>
         * {
@@ -48,7 +48,15 @@
 			width: 5em;
 			font-size: 25px;
 			line-height: 25px;
+		}
+		body {
+		  animation: blinker 7s linear infinite;
+		}
 
+		@keyframes blinker {
+		  50% {
+		    opacity: 0;
+		  }
 		}
     </style>
 </head>
@@ -83,32 +91,50 @@
 		    display: inline-block;
 		    position: absolute;
 		    z-index: 4;
-		    opacity: .3;
+		    opacity: 0;
 		    max-height: 2px;
 		    max-width: 10px;
-		    "><!-- TEMPORARY LINK 1 -->
+		    min-height: -5px;
+		    min-width: -1px;
+		    ">
 		</a></p>
 		<!-- <p><a href="book2.html" target="_blank">TEMPORARY LINK 2</a></p>
 		<p><a href="book3.html" target="_blank">TEMPORARY LINK 3</a></p> -->
 
 </div>
 
-<div class="home">
-	<p><a href="../index.html">Back to Virtual Reality</a></p></div>
-</div>
-
-<!-- Audio  WhIcH dOeSn'T fUcKiNg WoRk-->
-<div class="sound">
-	<a href="#" onmousedown="sound.play ()
-		    ">on</a> 
-		    <!-- flash along with "on" something scary? Some words? -->
-</div>
-
-<!-- news bookshelf reveals news articles about the virus on hover -->
-<div id="text">
+<div class="blink">
 	
 </div>
+
+<div class="home">
+
+	<input type="button" onclick="location.href='../index.html';" value="Back to Virtual Reality" />
+
+<!-- Audio  WhIcH dOeSn'T fUcKiNg WoRk-->
+
+<audio 
+	src="audio/rain.mp3" id="soundz">
+</audio>
+
+
 </body>
+
+
+<script type="text/javascript">
+		var playing = false;
+		var audioElm = $('#soundz').get(0);
+		$(window).scroll(function() {
+		  var pageScroll = $(window).scrollTop();
+		  if(!playing && pageScroll > -10 && pageScroll < 6000){
+		    audioElm.play();
+		    playing = true;
+		  }else if(pageScroll > 70000 || pageScroll < 69000){
+		    audioElm.pause();
+		    playing = false;
+		  }
+		});
+	</script>
 	<script type="text/javascript">
 		document.body.style.backgroundColor = "black";
 
@@ -116,50 +142,12 @@
 	<!-- console guidance -->
 	<script type="text/javascript">
 
-		console.log("HINT: There's an interesting book on the coffee table");
-		console.log('HINT: for a more immersive experience, click "on"');
+		console.log("HINT: There's an interesting book I wanted to re-visit on the coffee table");
 
 		
 	</script>
 
 
-	<script type="text/javascript">
-			// keyboard typing script!!!!!!!!!!
-
-				function typing(text) {
-					// var	i=0;
-					console.log(text)
-
-				// for(var i=0; i<text.length; i++){
-					if(text.length){
-						document.getElementById("text").innerHTML += text.charAt(0);
-						// i++;
-						setTimeout(typing,50, text.slice(1));
-					}
-				}
-	</script>
-
-
-	<!-- news hover timeline  -->
-	<script type="text/javascript">
-		for(var i=0; i<photos.length; i++){
-			var hovernews = $('<div/>', {
-					'class': 'hoverBox'
-				})
-				.html(photos[i].news)
-			// .css({'top': event.pageY-90, 'left': event.pageX-90})
-			// counter = counter+1;
-				.css({'left': Math.floor(Math.random() * 90) + "%", 'top': Math.floor(Math.random() * 90) + "%"})
-				.hover(function(){
-					typing($(this).html())
-					$(this).css({'opacity': 100})
-					// $( this ).fadeOut( 100 );
-  			// 		$( this ).fadeIn( 500 );
-				});
-
-			$('body').append(hovernews)
-		}
-	</script>
 <!-- fade in -->
 	<script>
 		document.body.className += ' fade-out';
