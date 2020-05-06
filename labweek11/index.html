@@ -109,8 +109,6 @@
 
 
 	<script type="text/javascript">
-
-
 		var counter = 0;
 // gives us the mousedown function + creates a class in HTML called mouseDownBox + a variable called photoclick
 		$(window).mousedown(function( event ) {
@@ -120,13 +118,9 @@
 // chooses .pic from the array to add the event listener to
 			.html(photos[counter%photos.length].pic)
 			.append(photos[counter%photos.length].name)
-			// .append(photos[counter%photos.length].desc)
 				.hover(function(){
 					$("desc").css({'opacity': 100})
-					// $( this ).fadeOut( 100 );
-  			// 		$( this ).fadeIn( 500 );
 				});
-			// appends the variable to the HTML
 			counter = counter+1;
 			$('body').append(photoclick)
 			});
@@ -142,8 +136,6 @@
 				.append(photos[i].pic)
 				.hover(function(){
 					$(this).css({'opacity': 100})
-					// $( this ).fadeOut( 100 );
-  			// 		$( this ).fadeIn( 500 );
 				});
 			$('body').append(hoverdesc)
 		};
@@ -163,5 +155,4 @@
 			console.log('You may need to hover around to remember.');
 
 	</script>
-
 </html>
