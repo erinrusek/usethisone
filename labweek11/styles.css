@@ -94,9 +94,10 @@ body.fade-out {
     max-height: 100vh;
     margin: auto;
     z-index: -5;
-    filter: blur(8px);
-  	-webkit-filter: blur(8px);
 }
+ /*   filter: blur(8px);
+  	-webkit-filter: blur(8px);
+}*/
 /*index.html hover slide function: Contextualizing pictures*/
 /*.hoverdesc {
 			font-family: 'Slabo 27px', serif;
@@ -121,32 +122,48 @@ body.fade-out {
 			top: 10%;
 }
 
+		@keyframes move {
+		  0% {
+    left: 0;
+  }
+  50% {
+    left: 100px;
+  }
+  100% {
+    left: -100px;
+  }
+}
+
 .hoverArea {
-			position: relative;
-			color: white;
-			font-size: 20px;
-			text-align: center;
-			font-weight: 700;
-			z-index: 10;
-			top: -10%;
-			background-color: #2A2B2B;
-			height: 10em;
-    		box-shadow: 0 0 20px 20px #2A2B2B;
-   			transition: all 1s ease;
-			-webkit-transition: all 1s ease;
-			width: 60vh;
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			opacity: 0;
-			left: 20%;
+	font-family: 'Jost', sans-serif;
+
+		  text-decoration: none;
+		  padding-right: 70px;
+		  position: relative;
+		  -webkit-animation: move 5s;
+		  animation: move 5s;
+		  opacity: 0;
+		  color: white;
+		  font-size: 20px;
+	   	text-align: left;
+		font-weight: 700;
+		z-index: 10;
+		  animation: move 10s infinite;
+		  left: -50vh;
+
 }
 
 .hoverArea > img {
-			height: 30vh;
+			font-family: 'Jost', sans-serif;
+			-webkit-transition: all 1s ease-in-out;
+			-moz-transition: all 1s ease-in-out;
+			-o-transition: all 1s ease-in-out;
+			-ms-transition: all 1s ease-in-out;
+			border-radius: 60px;
+			transition-duration: 1s;
+		    height: 30vh;
 			width: 40vh;
-			left: 30px
-			opacity: .5;
+
 }
 
 #helptxt {
@@ -162,4 +179,24 @@ body.fade-out {
 			z-index: 20;
 }
 
+.clickhere {
+	font-family: 'Roboto Mono', monospace;
+	display: inline;
+	color: red;	
+	position: relative;
+	top: -60vh;
+	right: -20vh;
+	animation: click 1s linear infinite;
+	z-index: 30;
 
+}
+
+.clickhere:hover {
+	opacity: 0;	  
+}
+
+@keyframes click {
+  50% {
+    opacity: 0;
+  }
+}

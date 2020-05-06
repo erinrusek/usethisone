@@ -9,12 +9,21 @@
 	<script type="text/javascript" src="jquery.min.js"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Jost:ital@1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 
 
 
 <body>
-	<!-- Alert only once -->
+	<style type="text/css">
+		body {
+			background: rgb(182,224,224);
+			background: linear-gradient(0deg, rgba(182,224,224,1) 30%, rgba(0,0,0,1) 60%);
+		}
+	</style>
+
+	<!-- Alert -->
 	<div class="welcome">
 		<script type="text/javascript">
 			setTimeout(function(){ alert("ℂ𝕝𝕚𝕔𝕜 𝕠𝕟 𝕥𝕙𝕖 𝕓𝕠𝕠𝕜 𝕥𝕠 ℝ𝕖𝕝𝕒𝕩 𝕒𝕟𝕕 ℝ𝕖𝕞𝕚𝕟𝕚𝕤𝕔𝕖"); }, 1000);
@@ -23,12 +32,12 @@
 
 	<div class="imgbox">
 		<a href="whatchaosimaginary.html" style=".grab {cursor: -webkit-grab; cursor: grab;}">
-			<img class="backpic" src="fireplace.gif" alt="A hecking cozy living room with a fireplace and books and a couch, and, books you can pull out?">
+			<img class="backpic" src="fire2.gif" alt="A hecking cozy living room with a fireplace and books and a couch, and, books you can pull out?">
 		</a>	
 	</div>
 
 	<div class="background">
-<!-- if then statement using css saturate property to de-saturate -->
+	<!-- if then statement using css saturate property to de-saturate -->
 	</div>
 
 	<div class="book">
@@ -45,6 +54,11 @@
 
 	<div class="back">
 	<!-- <p><a href="../index.html">Back to Virtual Reality</a></p> -->
+	</div>
+
+	<div class="clickhere">
+		Click here to <br> interact
+		<!-- <p><a href="../index.html">Back to Virtual Reality</a></p> -->
 	</div>
 
 	<div id="texty">
@@ -82,10 +96,10 @@
 		var audioElm = $('#crashboi').get(0);
 		$(window).scroll(function() {
 		  var pageScroll = $(window).scrollTop();
-		  if(!playing && pageScroll > 3000 && pageScroll < 6000){
+		  if(!playing && pageScroll > 3000 && pageScroll < 60000){
 		    audioElm.play();
 		    playing = true;
-		  }else if(pageScroll > 6000 || pageScroll < 3000){
+		  }else if(pageScroll > 60000 || pageScroll < 3000){
 		    audioElm.pause();
 		    playing = false;
 		  }
@@ -96,7 +110,6 @@
 
 	<script type="text/javascript">
 
-		document.body.style.backgroundColor = "black";
 
 		var counter = 0;
 // gives us the mousedown function + creates a class in HTML called mouseDownBox + a variable called photoclick
@@ -147,6 +160,8 @@
 	</script>
 	<script type="text/javascript">
 			console.log('Click the scrapbook to take your mind off of things.');
+			console.log('You may need to hover around to remember.');
+
 	</script>
 
 </html>
